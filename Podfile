@@ -11,3 +11,7 @@ pod 'PromiseKit'
 pod 'NSLogger'
 pod 'MBLogger'
 pod 'MobiletteFoundation'
+
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
