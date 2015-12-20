@@ -10,6 +10,7 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class MediaPlayViewController:
     UIViewController,
@@ -25,11 +26,31 @@ class MediaPlayViewController:
     {
         super.viewDidLoad()
         self.presenter?.updateView()
+        self.facebookConnect()
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: Facebook request
+    
+    private func facebookConnect()
+    {
+        let login: FBSDKLoginManager = FBSDKLoginManager()
+        login.logInWithReadPermissions(["public_profile", "email", "read_stream"], fromViewController:self, handler: { (result, error) -> Void in
+            
+            if (FBSDKAccessToken.currentAccessToken() == nil)
+            {
+                print("Did fail to connect with Facebook")
+            } else {
+                if result.grantedPermissions.contains("email")
+                {
+                    print("Did connect with Facebook: \(result)")
+                }
+            }
+        })
     }
 }
