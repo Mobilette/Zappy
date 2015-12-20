@@ -15,16 +15,15 @@ class RootWireframe
     
     func presentRootViewController(fromWindow window: UIWindow)
     {
-        // self.present<# Root module name #>ViewController(fromWindow: window)
+        self.presentMediaPlayViewController(fromWindow: window)
     }
     
-    /*
-    private func present<# Root module name #>ViewController(fromWindow window: UIWindow)
+    private func presentMediaPlayViewController(fromWindow window: UIWindow)
     {
-        let presenter = <# Root module name #>Presenter()
-        let interactor = <# Root module name #>Interactor()
-        // let networkController = <# Root module name #>NetworkController()
-        let wireframe = <# Root module name #>Wireframe()
+        let presenter = MediaPlayPresenter()
+        let interactor = MediaPlayInteractor()
+        // let networkController = MediaPlayNetworkController()
+        let wireframe = MediaPlayWireframe()
         // interactor.networkController = networkController
         interactor.output = presenter
         presenter.interactor = interactor
@@ -32,5 +31,4 @@ class RootWireframe
         wireframe.presenter = presenter
         wireframe.presentInterface(fromWindow: window)
     }
-    */
 }

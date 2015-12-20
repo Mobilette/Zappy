@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69759E181C26ECA300983CC0 /* MediaPlayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E0F1C26ECA300983CC0 /* MediaPlayInteractor.swift */; };
+		69759E191C26ECA300983CC0 /* MediaPlayInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E101C26ECA300983CC0 /* MediaPlayInteractorIO.swift */; };
+		69759E1A1C26ECA300983CC0 /* MediaPlayModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E111C26ECA300983CC0 /* MediaPlayModuleInterface.swift */; };
+		69759E1B1C26ECA300983CC0 /* MediaPlayNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E121C26ECA300983CC0 /* MediaPlayNetworkController.swift */; };
+		69759E1C1C26ECA300983CC0 /* MediaPlayNetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E131C26ECA300983CC0 /* MediaPlayNetworkProtocol.swift */; };
+		69759E1D1C26ECA300983CC0 /* MediaPlayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E141C26ECA300983CC0 /* MediaPlayPresenter.swift */; };
+		69759E1E1C26ECA300983CC0 /* MediaPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E151C26ECA300983CC0 /* MediaPlayViewController.swift */; };
+		69759E1F1C26ECA300983CC0 /* MediaPlayViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E161C26ECA300983CC0 /* MediaPlayViewInterface.swift */; };
+		69759E201C26ECA300983CC0 /* MediaPlayWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69759E171C26ECA300983CC0 /* MediaPlayWireframe.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* ZappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* ZappyTests.swift */; };
@@ -30,6 +39,15 @@
 /* Begin PBXFileReference section */
 		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		69759E0F1C26ECA300983CC0 /* MediaPlayInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayInteractor.swift; sourceTree = "<group>"; };
+		69759E101C26ECA300983CC0 /* MediaPlayInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayInteractorIO.swift; sourceTree = "<group>"; };
+		69759E111C26ECA300983CC0 /* MediaPlayModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayModuleInterface.swift; sourceTree = "<group>"; };
+		69759E121C26ECA300983CC0 /* MediaPlayNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayNetworkController.swift; sourceTree = "<group>"; };
+		69759E131C26ECA300983CC0 /* MediaPlayNetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayNetworkProtocol.swift; sourceTree = "<group>"; };
+		69759E141C26ECA300983CC0 /* MediaPlayPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayPresenter.swift; sourceTree = "<group>"; };
+		69759E151C26ECA300983CC0 /* MediaPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayViewController.swift; sourceTree = "<group>"; };
+		69759E161C26ECA300983CC0 /* MediaPlayViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayViewInterface.swift; sourceTree = "<group>"; };
+		69759E171C26ECA300983CC0 /* MediaPlayWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayWireframe.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* Zappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +88,29 @@
 				932D6B899F805DB37AD7132B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		69759E211C26ECAE00983CC0 /* App Logic */ = {
+			isa = PBXGroup;
+			children = (
+				69759E131C26ECA300983CC0 /* MediaPlayNetworkProtocol.swift */,
+				69759E121C26ECA300983CC0 /* MediaPlayNetworkController.swift */,
+				69759E0F1C26ECA300983CC0 /* MediaPlayInteractor.swift */,
+				69759E101C26ECA300983CC0 /* MediaPlayInteractorIO.swift */,
+			);
+			name = "App Logic";
+			sourceTree = "<group>";
+		};
+		69759E221C26ECB500983CC0 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				69759E111C26ECA300983CC0 /* MediaPlayModuleInterface.swift */,
+				69759E141C26ECA300983CC0 /* MediaPlayPresenter.swift */,
+				69759E151C26ECA300983CC0 /* MediaPlayViewController.swift */,
+				69759E161C26ECA300983CC0 /* MediaPlayViewInterface.swift */,
+				69759E171C26ECA300983CC0 /* MediaPlayWireframe.swift */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		69D508811BA8638000677D3C = {
@@ -140,6 +181,7 @@
 		69D508B01BA863B900677D3C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				69EE6FB01C26EBD7000B99A6 /* Media */,
 				69D508B91BA8672000677D3C /* Root */,
 			);
 			path = Modules;
@@ -201,6 +243,23 @@
 				69D508CA1BA86CFD00677D3C /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		69EE6FB01C26EBD7000B99A6 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				69EE6FB11C26EBEB000B99A6 /* Play */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		69EE6FB11C26EBEB000B99A6 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				69759E221C26ECB500983CC0 /* User Interface */,
+				69759E211C26ECAE00983CC0 /* App Logic */,
+			);
+			path = Play;
 			sourceTree = "<group>";
 		};
 		7EE775331AEA09B9C37AEC35 /* Frameworks */ = {
@@ -362,9 +421,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69759E1D1C26ECA300983CC0 /* MediaPlayPresenter.swift in Sources */,
+				69759E191C26ECA300983CC0 /* MediaPlayInteractorIO.swift in Sources */,
+				69759E1F1C26ECA300983CC0 /* MediaPlayViewInterface.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
+				69759E1B1C26ECA300983CC0 /* MediaPlayNetworkController.swift in Sources */,
+				69759E1C1C26ECA300983CC0 /* MediaPlayNetworkProtocol.swift in Sources */,
+				69759E1A1C26ECA300983CC0 /* MediaPlayModuleInterface.swift in Sources */,
+				69759E181C26ECA300983CC0 /* MediaPlayInteractor.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
+				69759E1E1C26ECA300983CC0 /* MediaPlayViewController.swift in Sources */,
+				69759E201C26ECA300983CC0 /* MediaPlayWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
